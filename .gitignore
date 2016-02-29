@@ -1,0 +1,8 @@
+# Ignore those private files
+ido.last
+places
+smex-items
+/var
+/xkcd
+/auto-save-list
+/.python-environments
