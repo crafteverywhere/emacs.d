@@ -1,6 +1,5 @@
 ;;; init-fun.el
 
-
 ;; nyan
 (require-package 'nyan-mode)
 (require 'nyan-mode)

@@ -45,6 +45,7 @@
 (setq auto-insert-query nil)
 
 ;; 利用 yasnippet 作为文件模板
+(autoload 'yas-expand-snippet "yasnippet")
 (defun templates/autoinsert-yas-expand()
       "Replace text in yasnippet template."
       (yas/expand-snippet (buffer-string) (point-min) (point-max)))
@@ -52,11 +53,11 @@
 ;; 文件模板加载
 (custom-set-variables
      '(auto-insert 'other)
-     '(auto-insert-directory "~/templates/")
+     '(auto-insert-directory "~/.emacs.d/templates/")
      '(auto-insert-alist
        '(
 	 (("\\.\\([Hh]\\|hh\\|hpp\\)\\'" . "C / C++ header") .
-	  ["template.h" c++-mode my/autoinsert-yas-expand])
+	  ["template.h" c++-mode templates/autoinsert-yas-expand])
 	 (("\\.\\([C]\\|cc\\|cpp\\)\\'" . "C++ source") .
 	  ["template.cc" templates/autoinsert-yas-expand])
 	 (("\\.sh\\'" . "Shell script") . ["template.sh" templates/autoinsert-yas-expand])

@@ -28,4 +28,7 @@ re-downloaded in order to locate PACKAGE."
         (package-refresh-contents)
         (require-package package min-version t)))))
 
+;; splash-image 替换
+(setq fancy-splash-image "~/.emacs.d/startup.png")
+
 (provide 'init-basic)
