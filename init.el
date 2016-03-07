@@ -18,6 +18,7 @@
 ;; 插件管理
 (require 'init-lib) ;; 额外的库文件支持
 (require 'init-ido) ;; 交互式操作增强, ido-mode 和 smex 配置
+(require 'init-org-mode) ;; org-mode 配置
 (require 'init-windmove) ;; 更方便的窗格移动方式
 (require 'init-multiple-cursors) ;; 同 buffer 多光标支持
 (require 'init-yasnippet) ;; 自定义模板插入

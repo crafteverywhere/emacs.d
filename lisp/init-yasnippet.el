@@ -41,7 +41,6 @@
 ;;======================================================
 (require 'autoinsert)
 (auto-insert-mode t)
-(setq auto-insert-directory "~/.emacs.d/templates/")
 (setq auto-insert-query nil)
 
 ;; 利用 yasnippet 作为文件模板

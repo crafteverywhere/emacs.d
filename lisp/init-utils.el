@@ -32,6 +32,7 @@
  truncate-partial-width-windows nil
  visible-bell t)
 (set-scroll-bar-mode nil)
+(show-paren-mode)
 (tool-bar-mode 0)
 
 ;; auto-revert
